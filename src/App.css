@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #ff0042;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 180px;
+  height: 100%;
+  background-color: #ff0042;
+  padding-top: 60px;
+  transition: 0.3s;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sidebar .dropdown-content {
+  background-color: #e60038;
+}
+
+.sidebar .dropdown-content button {
+  padding-left: 40px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 60px;
+  padding: 20px;
+}
